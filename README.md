@@ -13,7 +13,7 @@ This is a **.Net Core 2.1** API project and requires the following packages:
 ### Swagger configuration
 In the Startup.cs file we'll do 2 things:
 
-* Define the swagger documents in the `ConfigureServices()` method:
+1. Define the swagger documents in the `ConfigureServices()` method:
     ```
     services.AddSwaggerGen(c =>
     {
@@ -24,7 +24,7 @@ In the Startup.cs file we'll do 2 things:
     ```
     The above code defines 2 swagger documents (`v1` and `apim`)
     
-* Configure the swagger UI to use multiple documents in the `Configure()` method:
+2. Configure the swagger UI to use multiple documents in the `Configure()` method:
     ```
     app.UseSwagger();
     app.UseSwaggerUI(c =>
