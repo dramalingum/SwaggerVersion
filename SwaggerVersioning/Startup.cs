@@ -51,7 +51,8 @@ namespace SwaggerVersioning
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "TestApp");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+                c.SwaggerEndpoint("/swagger/apim/swagger.json", "APIM");
             });
             app.UseHttpsRedirection();
             app.UseMvc();
