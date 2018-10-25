@@ -46,5 +46,5 @@ public ActionResult<IEnumerable<string>> Get()
     return new string[] { "value1", "value2" };
 }
 ```
-To code above will setup this particular API method to `apim` swagger doccument **only**. 
+The code above will setup this particular API method to `apim` swagger doccument **only**. 
 If we want API methods to appear in all swagger documents then we should not set up the API method with the `ApiExplorerSettings` attribute at all e.g. the project has a `SharedController` that will show in both swagger documents because this attribute has not been specified.
